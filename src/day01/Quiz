@@ -1,0 +1,23 @@
+1. 자바에서 컴파일 명령어와 실행 명령어를 쓰시오.
+답: 컴파일 명령어: javac.exe
+    실행 명령어: java.exe
+
+
+2. 객체지향 프로그래밍 언어란 한 마디로 쓴다면?
+답: 객체 단위로 프로그래밍하는 언어
+
+3. JavaSE 프로그램의 기본 틀을 작성하시오. (Hello라는 메인 클래스를 만들어 볼 것)
+답: public class Hello {
+       public static void main(String[] args) {
+           System.out.println("Hello, World!");
+       }
+   }
+
+4. 객체지향 프로그래밍에서 클래스 안에서 특정 기능(동작)을 처리하는 함수를 무엇이라고 하는가?
+답: 메서드
+
+5. JavaSE 프로그램에서 프로그램의 진입점(시작점)이며 가장 먼저 실행되는 메서드의 이름을 쓰시오.
+답: main
+
+6. JVM(Java Virtual Machine)이란 무엇인가?
+답: JVM은 자바 프로그램을 실행해주는 프로세서
