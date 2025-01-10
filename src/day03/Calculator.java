@@ -48,26 +48,27 @@ public class Calculator {
      void calculator() {
         Scanner input = new Scanner(System.in);
         String message = " ";
-       do{
-        System.out.println("========계산기 프로그램=========");
-        //입력받는 로직 구현
-        System.out.print("숫자, 연산자(+,-,*,/ 중), 숫자 순서대로 입력해 주세요");
-        int num1 = input.nextInt();
-        char operator = input.next().charAt(0);
-        int num2 = input.nextInt();
+         do {
 
-        if (operator == '+') {
-            adder(num1, num2);
-        } else if (operator == '-') {
-            minus(num1, num2);
-        } else if (operator == '*') {
-            multiply(num1, num2);
-        } else if (operator == '/') {
-            div(num1, num2);
-        }
-         System.out.println("종료하시려면 \"exit\" 입력하세요 ");
-        message = input.next();
+             System.out.println("========계산기 프로그램=========");
+             //입력받는 로직 구현
+             System.out.print("숫자, 연산자(+,-,*,/ 중), 숫자 순서대로 입력해 주세요");
+             int num1 = input.nextInt();
+             char operator = input.next().charAt(0);
+             int num2 = input.nextInt();
 
-    }while(!message.equals("exit"));
+             if (operator == '+') {
+                 adder(num1, num2);
+             } else if (operator == '-') {
+                 minus(num1, num2);
+             } else if (operator == '*') {
+                 multiply(num1, num2);
+             } else if (operator == '/') {
+                 div(num1, num2);
+             }
+             System.out.println("\n종료하시려면 \"exit\" 입력하세요\n계속 하려면 아무 문자를 입력하세요 ");
+             message = input.next();
+
+         } while (!message.equals("exit"));
 }
 }
