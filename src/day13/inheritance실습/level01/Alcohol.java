@@ -1,24 +1,21 @@
 package day13.inheritance실습.level01;
 
-public class Alcohol extends Drink {
-    private double alcpor;
-    private String name;
-    private int price;
-    private int count;
+public class Alcohol extends Drink{
+    double alcper;
 
-    public Alcohol(String name, int price, int count, double alcpor) {
-        super(name, price, count);
-        this.alcpor = alcpor;
+    Alcohol(){
+
     }
-
-
+    Alcohol(String name, int price, int count,double alcper){
+        this.name = name;
+        this.price = price;
+        this.count = count;
+        this.alcper = alcper;
+    }
     public static void printTitle() {
-        System.out.println("상품명(도수[%])\t단가 \t수량 \t금액");
+        System.out.println("상품명(도수[%]) \t단가 \t수량 \t금액");
     }
-
-
-    @Override
     public void printData() {
-        System.out.println(getName() + "(" + alcpor + "%)\t\t" + getPrice() + "\t" + getCount() + "\t\t" + getTotalPrice());
+        System.out.printf("%s(%.1f) \t\t%d \t%d \t\t%d\n",name,alcper,price,count,getTotalPrice());
     }
 }
